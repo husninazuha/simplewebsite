@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href="~/css/Style.css" rel="stylesheet" />
+<script src="./lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#home-1").load("contactUs.html");
+        $("#aboutUs-home").load("aboutUs-home.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+<body>
+
+    <header class="w3-display-container w3-wide" id="home">
+        <img class="w3-image" src="Images/home-1.png" loading="lazy">
+        <div class=" w3-display-right w3-padding-large ">
+            <h1>STRONGEST DISTRIBUTION NETWORK</h1>
+            <hr id="line-home-1">
+        </div>
+    </header>
+
+    <div id="aboutUs-home"></div>
+
+    <div id="home-1"></div>
+
+    
+
+</body>
+</html>
+
+
+
+
